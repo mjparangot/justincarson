@@ -18,20 +18,19 @@ html, body {
 .top-wrapper {
 	width: 100%;
 	height: 100%;
-	background: url("../images/jc_hero.jpg") fixed center no-repeat;
+	background: url("../images/jc_hero2.jpg") fixed center no-repeat;
 	background-size: cover;
 }
 
 .overlay {
 	height: 100%;
 	background: rgba(65, 65, 65, 0);
-	padding-left: 120px;
 	color: #fff;
 
 }
 
 .header {
-	padding-top: 100px;
+	padding: 100px 0 0 150px;
 }
 
 
@@ -47,11 +46,12 @@ html, body {
 }
 
 .top-phrase {
-	margin: 35px 0 0 200px;
+	margin: 35px 0 0 0;
 	float: left;
 	font-family: GothamRound-Light;
 	font-weight: 300;
 	font-size: 45px;
+	display: block;
 }
 
 .top-phrase > strong {
@@ -71,12 +71,29 @@ html, body {
 	font-family: GothamRound-Light;
 	font-size: 23px;
 	font-weight: 100;
-	margin: 180px 0 0 202px;
+	clear: both;
+	padding-top: 30px;
+}
+
+.scroll-down > a {
+	width: 100px;
+	height: 100px;
+	display: block;
+	background: url("../images/scroll-down.png") center center no-repeat;
+	background-size: 100%;
+	margin: 300px auto 0 auto;
+}
+
+.scroll-down > p {
+	text-align: center;
+	font-family: GothamRound-Light;
+	font-weight: bold;
 }
 
 .projects {
 	background: #efefef;
-	overflow: hidden;
+	height: 100%;
+	overflow: auto;
 }
 
 .projects-title {
