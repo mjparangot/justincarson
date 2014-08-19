@@ -74,9 +74,15 @@ function updatePhrase(index) {
 
   var $phrase = $( ".top-phrase" );
 
+  $phrase.removeClass('slideUp slideDown');
+
   setTimeout(function () {
-    $phrase.html( getPhrase(index) ).fadeIn(500);
-  }, 100);
+    $phrase.addClass("slideDown");
+  }, 0);
+
+  setTimeout(function () {
+    $phrase.html(getPhrase(index)).fadeIn(500);
+  }, 0);
 }
 
 function init() {
@@ -96,7 +102,7 @@ $(function() {
       if (target.length) {
         $('html,body').animate({
           scrollTop: target.offset().top
-        }, 500);
+        }, 800);
         return false;
       }
     }

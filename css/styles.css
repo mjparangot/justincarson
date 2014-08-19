@@ -26,7 +26,6 @@ html, body {
 	height: 100%;
 	background: rgba(65, 65, 65, 0);
 	color: #fff;
-
 }
 
 .header {
@@ -52,6 +51,7 @@ html, body {
 	font-weight: 300;
 	font-size: 45px;
 	display: block;
+	visibility: hidden;
 }
 
 .top-phrase > strong {
@@ -75,13 +75,20 @@ html, body {
 	padding-top: 30px;
 }
 
+.scroll-down {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 20px;
+}
+
 .scroll-down > a {
 	width: 100px;
 	height: 100px;
 	display: block;
 	background: url("../images/scroll-down.png") center center no-repeat;
 	background-size: 100%;
-	margin: 300px auto 0 auto;
+	margin: 0 auto;
 }
 
 .scroll-down > p {
@@ -92,13 +99,12 @@ html, body {
 
 .projects {
 	background: #efefef;
-	height: 100%;
 	overflow: auto;
 }
 
 .projects-title {
 	text-align: center;
-	font-family: GothamRound-Medium;
+	font-family: GothamRound-Light;
 	font-size: 45px;
 	font-weight: 100;
 	text-transform: uppercase;
