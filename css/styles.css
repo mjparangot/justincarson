@@ -12,12 +12,10 @@
 html, body {
 	margin: 0;
 	padding: 0;
-	height: 100%;
 }
 
 .top-wrapper {
 	width: 100%;
-	height: 100%;
 	background: url("../images/jc_hero2.jpg") fixed center no-repeat;
 	background-size: cover;
 }
@@ -76,10 +74,11 @@ html, body {
 }
 
 .scroll-down {
+	color: #fff;
 	position: absolute;
 	left: 0;
 	right: 0;
-	bottom: 20px;
+	margin-top: -160px;
 }
 
 .scroll-down > a {
@@ -148,6 +147,20 @@ html, body {
 .shot:nth-child(3n+3) {
 	margin-right: 0;
 }
+
+.footer {
+	height: 110px;
+	background: #292929;
+	font-family: GothamRound-Light;
+	color: #fff;
+}
+
+.credits {
+	float: left;
+	margin: 0;
+
+}
+
 
 
 

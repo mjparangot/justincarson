@@ -11,6 +11,16 @@ var phraseHovered = false;
 var delay = 4000;
 var currentIndex = 0;
 
+// Adjust top height on resize
+$( window ).resize(function() {
+  $( ".top-wrapper" ).css("height", $( window ).height());
+
+  if ( $( window ).height() < 700)
+    $( ".scroll-down" ).css("display", "none");
+  else
+    $( ".scroll-down" ).css("display", "block");
+});
+
 
 // Dribbble feed
 $(document).ready(function getDribbbleShots() {   
@@ -91,6 +101,9 @@ function init() {
 
   // Set interval for updating phrase
   setInterval(updatePhrase, delay);
+
+  // Set 100% height
+  $( ".top-wrapper" ).css("height", $( window ).height());
 }
 
 // Smooth scroll animation
