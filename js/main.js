@@ -3,7 +3,7 @@ var phrases = [
   'I go by the name <br/><strong>Justin.</strong>',
   'I am a <strong>designer</strong> of interfaces<br/>and interactions.',
   'I sometimes share playlists<br/>on <strong><a href="http://spotify.com" target="_blank">Spotify.</a></strong>',
-  'I often take shots of<br/>pixels on <strong>Dribbble</strong>'
+  'I often take shots of<br/>pixels on <strong><a href="https://dribbble.com/JustinCarson" target="_blank">Dribbble</a></strong>'
 ];
 
 var stack = [];
@@ -51,16 +51,16 @@ function getOverlayPercentage(scrollAmount) {
 
 
 // Phrase hover event handlers
-function hoverPhraseStart() {
+function hoverPhraseStart () {
   phraseHovered = true;
 }
-function hoverPhraseEnd() {
+function hoverPhraseEnd () {
   phraseHovered = false;
 }
 
 // bind event handlers to mouseenter and mouseleave
 // could also user .hover(start, end) but it's deprecated in v 1.9
-$('.top-phrase').mouseenter(hoverPhraseStart).mouseleave(hoverPhraseEnd);
+$( ".top-phrase" ).mouseenter(hoverPhraseStart).mouseleave(hoverPhraseEnd);
 
 
 
@@ -90,9 +90,7 @@ function updatePhrase(index) {
     $phrase.addClass("slideDown");
   }, 0);
 
-  setTimeout(function () {
-    $phrase.html(getPhrase(index)).fadeIn(500);
-  }, 0);
+  $phrase.html(getPhrase(index));
 }
 
 function init() {

@@ -18,6 +18,7 @@ html, body {
 	width: 100%;
 	background: url("../images/jc_hero2.jpg") fixed center no-repeat;
 	background-size: cover;
+	background-position: 52% 50%
 }
 
 .overlay {
@@ -30,8 +31,7 @@ html, body {
 	padding: 100px 0 0 150px;
 }
 
-
-.avatar {
+/*.avatar {
 	width: 175px;
 	height: 175px;
 	display: block;
@@ -40,7 +40,7 @@ html, body {
 	position: absolute;
 	border-radius: 50%;
 	float: left;
-}
+}*/ 
 
 .top-phrase {
 	margin: 35px 0 0 0;
@@ -99,6 +99,7 @@ html, body {
 .projects {
 	background: #efefef;
 	overflow: auto;
+	padding-bottom: 60px;
 }
 
 .projects-title {
@@ -149,19 +150,97 @@ html, body {
 }
 
 .footer {
-	height: 110px;
-	background: #292929;
+	height: 100px;
+	background: #fff;
 	font-family: GothamRound-Light;
-	color: #fff;
+	color: #505050;
+	border-top: 1px solid #505050;
+}
+
+.footer > div > a {
+	text-decoration: none;
+	color: #616161;
+	font-weight: bold;
 }
 
 .credits {
+	display: inline;
+	position: relative;
+	top: 50%;
 	float: left;
-	margin: 0;
+	margin-left: 60px;
+	color: #505050;
+}
 
+.links {
+	display: inline;
+	position: relative;
+	top: 50%;
+	float: right;
+	margin-right: 60px;
+}
+
+.links > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.links > ul > li {
+    display: inline;
+	margin-right: 20px;
+}
+
+.links > ul > li:nth-child(4n+0) {
+	margin-right: 0px;
+}
+
+.links > ul > li > a {
+	color: #616161;
+	text-decoration: none;
+}
+
+.links > ul > li > a:hover {
+	color: blue;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	-ms-transition: all 0.1s linear;
+	-o-transition: all 0.1s linear;
+	transition: all 0.1s linear;
 }
 
 
+/* MEDIA QUERIES */
 
 
+@media (max-width: 1060px) {
 
+	.shot:nth-child(3n+3) {
+		margin-right: 40px;
+	}
+}
+
+
+@media (max-width: 860px) and (min-width: 631px) {
+
+	.header {
+		padding: 100px 0 0 40px;
+	}
+}
+
+@media (max-width: 730px){
+
+	.header {
+		padding: 100px 0 0 40px;
+	}
+
+	.top-phrase {
+		margin: 0;
+		font-size: 35px;
+	}
+
+	.top-desc {
+		padding: 40px 60px 0 0;
+		width: auto;
+	}
+}
