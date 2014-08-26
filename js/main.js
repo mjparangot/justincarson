@@ -1,6 +1,6 @@
 
 var phrases = [
-  'I go by the name <br/><strong>Justin.</strong>',
+  'I go by the name <br/><strong><a href="https://twitter.com/justncarson" target="_blank">Justin.</strong>',
   'I am a <strong>designer</strong> of interfaces<br/>and interactions.',
   'I sometimes share playlists<br/>on <strong><a href="http://spotify.com" target="_blank">Spotify.</a></strong>',
   'I often take shots of<br/>pixels on <strong><a href="https://dribbble.com/JustinCarson" target="_blank">Dribbble</a></strong>'
